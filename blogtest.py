@@ -1,0 +1,3 @@
+from blogtestapp import app
+
+

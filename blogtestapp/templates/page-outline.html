@@ -1,0 +1,17 @@
+<html>
+	<head>
+		{% if title %}
+		<title>{{ user.username }} - Blogtest - {{ title }}</title>
+		{% else %}
+		<title>Random Blog Title</title>
+		{% endif %}
+	</head>
+	<body>
+		<div>Test Blog: <a href="/index/">Home</a></div>
+
+		{% block content %} {% endblock %}
+
+		<div>This is the footer of each page.</div>
+	</body>
+</html>
+
